@@ -6,6 +6,7 @@ import {
   instagramUrl,
   openseaUrl,
   twitterUrl,
+  swapUrl,
 } from '../../utils/snsLinks'
 
 const LinkIcon: React.FC<{
@@ -39,6 +40,10 @@ const LinkIcon: React.FC<{
 const Component: React.FC = () => {
   return (
     <Flex as="nav" gap={4}>
+      <LinkIcon
+        func={swapUrl}
+        icon={'/assets/logo/sushi.webp'}
+      />
       <LinkIcon
         func={openseaUrl}
         icon={'/assets/logo/logo_black_opensea.svg'}

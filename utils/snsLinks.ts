@@ -28,6 +28,19 @@ export const explorerUrl = () => {
   }
 }
 
+export const swapUrl = () => {
+  const token = process.env.NEXT_PUBLIC_TOKEN_CONTRACT_ADDRESS
+  const chain = process.env.NEXT_PUBLIC_CHAIN_ID
+
+  switch (process.env.NEXT_PUBLIC_CHAIN_ID) {
+    case '250':
+      // Mainnet
+      return `https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=${token}&chainId=${chain}`
+    default:
+      return ``
+  }
+}
+
 export const openseaUrl = () => {
   const name = process.env.NEXT_PUBLIC_CONTRACT_NAME
 
