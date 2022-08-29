@@ -193,10 +193,7 @@ const Component: React.FC = () => {
       {!address ? (
     <Box
       zIndex={20}
-      position="fixed"
-      w="100%"
-      h="100%"
-      opacity={0.95}
+      className={stake.midCenter}
     >
     <Flex
       maxW={'8xl'}

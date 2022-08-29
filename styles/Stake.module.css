@@ -33,6 +33,13 @@
     text-align: center;
 }
 
+.midCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
 @media (min-width: 320px) and (max-width: 767.98px) {
 .tokenStake {
     max-width: unset;
