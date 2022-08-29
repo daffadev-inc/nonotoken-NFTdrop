@@ -17,9 +17,12 @@ export const explorerUrl = () => {
     case '80001':
       // Munbai
       return `https://mumbai.polygonscan.com/token/${address}`
-    case '1666600000':
-      // Harmony
-      return `https://explorer.harmony.one/address/${address}`
+    case '250':
+      // Fantom
+      return `https://ftmscan.com/token/${address}`
+    case '4002':
+      // FantomTestnet
+      return `https://testnet.ftmscan.com/token/${address}`
     default:
       return ''
   }
