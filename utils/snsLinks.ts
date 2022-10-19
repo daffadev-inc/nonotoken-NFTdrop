@@ -35,7 +35,7 @@ export const swapUrl = () => {
   switch (process.env.NEXT_PUBLIC_CHAIN_ID) {
     case '250':
       // Mainnet
-      return `https://app.sushi.com/swap?inputCurrency=ETH&outputCurrency=${token}&chainId=${chain}`
+      return `https://app.sushi.com/swap?inputCurrency=0x4E15361FD6b4BB609Fa63C81A2be19d873717870&outputCurrency=${token}&chainId=${chain}`
     default:
       return ``
   }
